@@ -1,0 +1,35 @@
+.nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button{
+        background: transparent;
+        border: 2px solid rgb(65,65,65);
+        padding: 0.5rem;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(65,65,65);
+            color: white;
+        }
+    }
+}
+
+.logo{
+    width: 2rem;
+}
+
+.logo-brand{
+    display: flex;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        button{
+            z-index: 2;
+        }
+    }
+}
